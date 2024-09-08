@@ -13,8 +13,7 @@ SQA Engineer
 - Computers and IT
 - Coding
   
-
-### Projects
+### Projects:
 - Project 1
 - Project 2
   
