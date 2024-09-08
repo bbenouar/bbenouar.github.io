@@ -1,4 +1,4 @@
-# Software Developer / Security Analist
+# Software Developer / Security Analyst
 
 ### Education:
 Computer Science, Electrical Engineering
