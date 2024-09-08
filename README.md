@@ -1,4 +1,4 @@
-# Developer
+# Software Developer / Security Analist
 
 ### Education:
 Computer Science, Electrical Engineering
@@ -8,6 +8,11 @@ SQA Engineer
 - Automation
 - Testing
 - Write Scripts
+  
+### Skils:
+- Computers and IT
+- Coding
+  
 
 ### Projects
 - Project 1
