@@ -15,12 +15,12 @@
 ### Skils:
 #### Software Development:
 Proficient in programming languages such as Java, Python, and C++
-Experienced in full-stack development, mobile app development, and web technologies
+Experienced in mobile app development, and web technologies
 #### Database Management:
-Knowledge of SQL, MySQL, SQLite, and Firebase for scalable database design
+Knowledge of SQL, MySQL, SQLite for scalable database design
 #### Automation & Testing:
 Developed automation scripts for test environments
-Familiar with Selenium, JUnit, and other testing frameworks
+Familiar with JUnit, and other testing frameworks
 #### Cybersecurity:
 Basic understanding of network security, encryption, and secure coding practices
 #### Version Control:
@@ -30,7 +30,7 @@ Proficient in Git for version control and collaborative development
 ### Projects:
 - Project 1: Weight Tracking App
 Developed a mobile app to allow users to log and track their daily weight.
-Integrated SQLite for local storage and later migrated to Firebase for cloud-based data management
+Integrated SQLite for local storage.
 Implemented user authentication, data visualization, and real-time data syncing
 
 - Project 2: OpenGL 3D Graphics Application
