@@ -7,29 +7,28 @@
 - Focus: Hardware Systems, Circuit Design, and Embedded Systems
 
 ### Work Experience:
-SQA (Software Quality Assurance) Engineer
-Automated and manual testing of software applications to ensure quality and performance
-Developed and executed test scripts for identifying and resolving defects in software products
-Conducted performance testing to enhance system efficiency and scalability
+- SQA (Software Quality Assurance) Engineer
+- Automated and manual testing of software applications to ensure quality and performance.
+- Developed and executed test scripts for identifying and resolving defects in software products
+- Conducted performance testing to enhance system efficiency and scalability
   
 ### Skils:
-Software Development:
+#### Software Development:
 Proficient in programming languages such as Java, Python, and C++
 Experienced in full-stack development, mobile app development, and web technologies
-Database Management:
+#### Database Management:
 Knowledge of SQL, MySQL, SQLite, and Firebase for scalable database design
-Automation & Testing:
+#### Automation & Testing:
 Developed automation scripts for test environments
 Familiar with Selenium, JUnit, and other testing frameworks
-Cybersecurity:
+#### Cybersecurity:
 Basic understanding of network security, encryption, and secure coding practices
-Version Control:
+#### Version Control:
 Proficient in Git for version control and collaborative development
-Cloud Integration:
-Experience working with cloud services (Firebase, AWS) for real-time data management
+
   
 ### Projects:
-Project 1: Weight Tracking App
+- Project 1: Weight Tracking App
 Developed a mobile app to allow users to log and track their daily weight
 Integrated SQLite for local storage and later migrated to Firebase for cloud-based data management
 Implemented user authentication, data visualization, and real-time data syncing
