@@ -29,9 +29,13 @@ Proficient in Git for version control and collaborative development
   
 ### Projects:
 - Project 1: Weight Tracking App
-Developed a mobile app to allow users to log and track their daily weight
+Developed a mobile app to allow users to log and track their daily weight.
 Integrated SQLite for local storage and later migrated to Firebase for cloud-based data management
 Implemented user authentication, data visualization, and real-time data syncing
-- Project 2
-  
+
+- Project 2: OpenGL 3D Graphics Application
+Designed and developed a 3D scene using OpenGL, focusing on advanced rendering techniques like shadow mapping, shaders, and texture application.
+Optimized performance through memory management and rendering pipeline improvements.
+Worked on integrating lighting techniques to create realistic scenes.
+Planning to explore animation, text overlays and video embedding for enhanced user interaction.
 
