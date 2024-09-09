@@ -1,10 +1,10 @@
 # Software Developer / Security Analyst
 
 ### Education:
-Enrolled IN Bachelor’s Degree in Computer Science
-Focus: Software Engineering, Cybersecurity, Data Structures, and Algorithms
-Electrical Engineering
-Focus: Hardware Systems, Circuit Design, and Embedded Systems
+- Enrolled IN Bachelor’s Degree in Computer Science
+- Focus: Software Engineering, Cybersecurity, Data Structures, and Algorithms.
+- Electrical Engineering
+- Focus: Hardware Systems, Circuit Design, and Embedded Systems
 
 ### Work Experience:
 SQA (Software Quality Assurance) Engineer
