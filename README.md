@@ -1,20 +1,38 @@
 # Software Developer / Security Analyst
 
 ### Education:
-Computer Science, Electrical Engineering
+Enrolled IN Bachelor’s Degree in Computer Science
+Focus: Software Engineering, Cybersecurity, Data Structures, and Algorithms
+Electrical Engineering
+Focus: Hardware Systems, Circuit Design, and Embedded Systems
 
 ### Work Experience:
-SQA Engineer
-- Automation
-- Testing
-- Write Scripts
+SQA (Software Quality Assurance) Engineer
+Automated and manual testing of software applications to ensure quality and performance
+Developed and executed test scripts for identifying and resolving defects in software products
+Conducted performance testing to enhance system efficiency and scalability
   
 ### Skils:
-- Computers and IT
-- Coding
+Software Development:
+Proficient in programming languages such as Java, Python, and C++
+Experienced in full-stack development, mobile app development, and web technologies
+Database Management:
+Knowledge of SQL, MySQL, SQLite, and Firebase for scalable database design
+Automation & Testing:
+Developed automation scripts for test environments
+Familiar with Selenium, JUnit, and other testing frameworks
+Cybersecurity:
+Basic understanding of network security, encryption, and secure coding practices
+Version Control:
+Proficient in Git for version control and collaborative development
+Cloud Integration:
+Experience working with cloud services (Firebase, AWS) for real-time data management
   
 ### Projects:
-- Project 1
+Project 1: Weight Tracking App
+Developed a mobile app to allow users to log and track their daily weight
+Integrated SQLite for local storage and later migrated to Firebase for cloud-based data management
+Implemented user authentication, data visualization, and real-time data syncing
 - Project 2
   
 
