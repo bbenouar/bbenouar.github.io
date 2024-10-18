@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brahim's ePortfolio</title>
+
+    <!-- Add the CSS styling for project galleries here -->
+    <style>
+        .project-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project-gallery img {
+            border: 1px solid #ddd;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .project-gallery p {
+            max-width: 300px;
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brahim's ePortfolio</title>
     <link rel="stylesheet" href="style.css"> <!-- Optional: Include a CSS file for styling -->
     <style>
         body {
@@ -138,32 +162,89 @@
         <p>Proficient in Git for version control and collaborative development.</p>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
+   <!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
 
-        <!-- Weight-Tracking App -->
-        <h3>Weight Tracking App</h3>
-        <p>
-            Developed a mobile app to allow users to log and track their daily weight. Integrated SQLite for local storage. Implemented user authentication, data visualization, and real-time data syncing.
-        </p>
-        <ul>
-            <li><a href="link-to-your-original-weight-tracker-repo">Original Weight-Tracking App</a></li>
-            <li><a href="link-to-your-enhanced-weight-tracker-repo">Enhanced Weight-Tracking App</a></li>
-        </ul>
-        <p><strong>Technologies used:</strong> Java, Firebase Firestore, SQLite, Android SDK</p>
+    <!-- Software Design and Engineering -->
+    <h3>Software Design and Engineering</h3>
+    
+    <!-- OpenGL 3D Graphics Application -->
+    <h4>Original Version</h4>
+    <div class="project-gallery">
+        <img src="path-to-original-opengl-image1.jpg" alt="Original OpenGL Project - Screenshot 1" width="300">
+        <p>Description of the original OpenGL 3D Graphics application.</p>
 
-        <!-- OpenGL 3D Graphics Project -->
-        <h3>OpenGL 3D Graphics Application</h3>
-        <p>
-            Designed and developed a 3D scene using OpenGL, focusing on advanced rendering techniques like shadow mapping, shaders, and texture application. Optimized performance through memory management and rendering pipeline improvements. Worked on integrating lighting techniques to create realistic scenes.
-        </p>
-        <ul>
-            <li><a href="link-to-your-original-opengl-repo">Original OpenGL Project</a></li>
-            <li><a href="link-to-your-enhanced-opengl-repo">Enhanced OpenGL Project</a></li>
-        </ul>
-        <p><strong>Technologies used:</strong> OpenGL, C++, FreeType, GLEW, GLFW</p>
-    </section>
+        <img src="path-to-original-opengl-image2.jpg" alt="Original OpenGL Project - Screenshot 2" width="300">
+        <p>Another description of the original OpenGL application.</p>
+    </div>
+
+    <h4>Enhanced Version</h4>
+    <div class="project-gallery">
+        <img src="path-to-enhanced-opengl-image1.jpg" alt="Enhanced OpenGL Project - Screenshot 1" width="300">
+        <p>Description of the enhanced OpenGL 3D Graphics application, including new features like text overlays and video embedding.</p>
+
+        <img src="path-to-enhanced-opengl-image2.jpg" alt="Enhanced OpenGL Project - Screenshot 2" width="300">
+        <p>Additional description of enhancements like optimized rendering techniques and lighting improvements.</p>
+    </div>
+    <ul>
+        <li><a href="link-to-your-original-opengl-repo">Original OpenGL Project Repository</a></li>
+        <li><a href="link-to-your-enhanced-opengl-repo">Enhanced OpenGL Project Repository</a></li>
+    </ul>
+
+    <!-- Algorithms and Data Structures -->
+    <h3>Algorithms and Data Structures</h3>
+    
+    <!-- Weight Tracking App (Original and Enhanced) -->
+    <h4>Original Version</h4>
+    <div class="project-gallery">
+        <img src="path-to-original-weight-image1.jpg" alt="Original Weight Tracking App - Screenshot 1" width="300">
+        <p>Description of the original version of the Weight Tracking App, including basic data handling and UI features.</p>
+
+        <img src="path-to-original-weight-image2.jpg" alt="Original Weight Tracking App - Screenshot 2" width="300">
+        <p>Another feature from the original Weight Tracking App.</p>
+    </div>
+
+    <h4>Enhanced Version</h4>
+    <div class="project-gallery">
+        <img src="path-to-enhanced-weight-image1.jpg" alt="Enhanced Weight Tracking App - Screenshot 1" width="300">
+        <p>Description of the enhanced version of the Weight Tracking App, highlighting improvements in data sorting and pagination for handling large datasets.</p>
+
+        <img src="path-to-enhanced-weight-image2.jpg" alt="Enhanced Weight Tracking App - Screenshot 2" width="300">
+        <p>Additional improvements in search and filtering features.</p>
+    </div>
+    <ul>
+        <li><a href="link-to-your-original-weight-tracker-repo">Original Weight Tracking App Repository</a></li>
+        <li><a href="link-to-your-enhanced-weight-tracker-repo">Enhanced Weight Tracking App Repository</a></li>
+    </ul>
+
+    <!-- Databases -->
+    <h3>Databases</h3>
+    
+    <!-- Weight Tracking App (Database Enhancements) -->
+    <h4>Original Version</h4>
+    <div class="project-gallery">
+        <img src="path-to-original-database-image1.jpg" alt="Original Weight Tracking App - Database Screenshot 1" width="300">
+        <p>Description of the original database structure using SQLite for the Weight Tracking App.</p>
+
+        <img src="path-to-original-database-image2.jpg" alt="Original Weight Tracking App - Database Screenshot 2" width="300">
+        <p>Another feature from the original Weight Tracking App's database structure.</p>
+    </div>
+
+    <h4>Enhanced Version</h4>
+    <div class="project-gallery">
+        <img src="path-to-enhanced-database-image1.jpg" alt="Enhanced Weight Tracking App - Firebase Integration Screenshot 1" width="300">
+        <p>Description of the enhanced version of the database, including Firebase integration for real-time updates.</p>
+
+        <img src="path-to-enhanced-database-image2.jpg" alt="Enhanced Weight Tracking App - Firebase Integration Screenshot 2" width="300">
+        <p>Additional enhancements such as syncing between SQLite and Firebase Firestore.</p>
+    </div>
+    <ul>
+        <li><a href="link-to-your-original-weight-tracker-repo">Original Weight Tracking App Repository</a></li>
+        <li><a href="link-to-your-enhanced-weight-tracker-repo">Enhanced Weight Tracking App Repository</a></li>
+    </ul>
+</section>
+
 
     <!-- Code Review Section -->
     <section id="code-review">
