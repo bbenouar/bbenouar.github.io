@@ -4,44 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brahim's ePortfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Optional: Link to a CSS file if you want to style your page -->
+    <link rel="stylesheet" href="style.css"> <!-- Optional: Include a CSS file for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+        nav ul li {
+            display: inline;
+            padding: 10px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
         <h1>Welcome to Brahim's ePortfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#self-assessment">Professional Self-Assessment</a></li>
-                <li><a href="#code-review">Code Review Video</a></li>
-                <li><a href="#artifacts">Artifacts</a></li>
-                <li><a href="#contact">Contact Information</a></li>
-            </ul>
-        </nav>
+        <p>Showcasing My Professional Growth in Computer Science</p>
     </header>
 
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#self-assessment">Professional Self-Assessment</a></li>
+            <li><a href="#code-review">Code Review Video</a></li>
+            <li><a href="#artifacts">Artifacts</a></li>
+            <li><a href="#contact">Contact Information</a></li>
+        </ul>
+    </nav>
+
+    <!-- Professional Self-Assessment Section -->
     <section id="self-assessment">
         <h2>Professional Self-Assessment</h2>
-        <p>Provide your self-assessment content here...</p>
+        <p>
+            I am a Computer Science student specializing in software development and cybersecurity. Over the course of my studies, I have developed a deep understanding of how modern technology solutions can improve efficiency and security. This ePortfolio showcases my skills in areas such as database management, software design, and algorithms. My goal is to continue growing as a software developer and cybersecurity analyst, and the projects in this portfolio demonstrate my capabilities in these areas.
+        </p>
+        <p>
+            I believe that my ability to develop scalable, efficient, and secure applications aligns with industry standards and best practices, which I have honed through my projects. These projects serve as tangible evidence of my ability to solve complex computing problems.
+        </p>
     </section>
 
+    <!-- Code Review Section -->
     <section id="code-review">
         <h2>Code Review Video</h2>
-        <p>Embed your code review video here...</p>
+        <p>Below is my code review video where I walk through the original functionality of my projects and discuss the planned enhancements:</p>
+        <video width="600" controls>
+            <source src="path-to-your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </section>
 
+    <!-- Artifacts Section -->
     <section id="artifacts">
         <h2>Artifacts</h2>
-        <p>Details of your projects will go here...</p>
+
+        <!-- Weight-Tracking App -->
+        <h3>Weight-Tracking App</h3>
+        <p>
+            This project is an Android application designed to help users track their daily weight and set goal weights. The app features real-time data storage using Firebase Firestore, as well as local storage using SQLite. The enhancements I made include adding goal-tracking features and improving data visualization with charts.
+        </p>
+        <ul>
+            <li><a href="link-to-your-original-weight-tracker-repo">Original Weight-Tracking App</a></li>
+            <li><a href="link-to-your-enhanced-weight-tracker-repo">Enhanced Weight-Tracking App</a></li>
+        </ul>
+        <p><strong>Technologies used:</strong> Java, Firebase Firestore, SQLite, Android SDK</p>
+
+        <!-- OpenGL 3D Graphics Project -->
+        <h3>OpenGL 3D Graphics Project</h3>
+        <p>
+            This project is a 3D graphics application developed using OpenGL. The application demonstrates advanced rendering techniques, including the use of shaders for text overlays and video embedding. The enhancements made to this project include optimizing the rendering pipeline and incorporating more complex textures and lighting.
+        </p>
+        <ul>
+            <li><a href="link-to-your-original-opengl-repo">Original OpenGL Project</a></li>
+            <li><a href="link-to-your-enhanced-opengl-repo">Enhanced OpenGL Project</a></li>
+        </ul>
+        <p><strong>Technologies used:</strong> OpenGL, C++, FreeType, GLEW, GLFW</p>
     </section>
 
+    <!-- Contact Information Section -->
     <section id="contact">
         <h2>Contact Information</h2>
-        <p>Email: your-email@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn Profile</a></p>
+        <p>If you'd like to connect or learn more about my work, feel free to reach out to me:</p>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Brahim's Portfolio</p>
     </footer>
+
 </body>
 </html>
