@@ -47,6 +47,14 @@
             bottom: 0;
             width: 100%;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
     </style>
 </head>
 <body>
@@ -61,8 +69,11 @@
     <nav>
         <ul>
             <li><a href="#self-assessment">Professional Self-Assessment</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#code-review">Code Review Video</a></li>
-            <li><a href="#artifacts">Artifacts</a></li>
             <li><a href="#contact">Contact Information</a></li>
         </ul>
     </nav>
@@ -73,9 +84,85 @@
         <p>
             I am a Computer Science student specializing in software development and cybersecurity. Over the course of my studies, I have developed a deep understanding of how modern technology solutions can improve efficiency and security. This ePortfolio showcases my skills in areas such as database management, software design, and algorithms. My goal is to continue growing as a software developer and cybersecurity analyst, and the projects in this portfolio demonstrate my capabilities in these areas.
         </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Focus</th>
+            </tr>
+            <tr>
+                <td>Bachelor’s Degree in Computer Science (In Progress)</td>
+                <td>Southern New Hampshire University</td>
+                <td>Software Engineering, Cybersecurity, Data Structures, and Algorithms</td>
+            </tr>
+            <tr>
+                <td>Electrical Engineering</td>
+                <td>Northeastern University</td>
+                <td>Hardware Systems, Circuit Design, and Embedded Systems</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <h3>Software Quality Assurance (SQA) Engineer</h3>
+        <ul>
+            <li>Automated and manual testing of software applications to ensure quality and performance.</li>
+            <li>Developed and executed test scripts for identifying and resolving defects in software products.</li>
+            <li>Conducted performance testing to enhance system efficiency and scalability.</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Software Development</h3>
+        <p>Proficient in programming languages such as Java, Python, and C++. Experienced in mobile app development and web technologies.</p>
+
+        <h3>Database Management</h3>
+        <p>Knowledge of SQL, MySQL, SQLite for scalable database design.</p>
+
+        <h3>Automation & Testing</h3>
+        <p>Developed automation scripts for test environments. Familiar with JUnit, and other testing frameworks.</p>
+
+        <h3>Cybersecurity</h3>
+        <p>Basic understanding of network security, encryption, and secure coding practices.</p>
+
+        <h3>Version Control</h3>
+        <p>Proficient in Git for version control and collaborative development.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- Weight-Tracking App -->
+        <h3>Weight Tracking App</h3>
         <p>
-            I believe that my ability to develop scalable, efficient, and secure applications aligns with industry standards and best practices, which I have honed through my projects. These projects serve as tangible evidence of my ability to solve complex computing problems.
+            Developed a mobile app to allow users to log and track their daily weight. Integrated SQLite for local storage. Implemented user authentication, data visualization, and real-time data syncing.
         </p>
+        <ul>
+            <li><a href="link-to-your-original-weight-tracker-repo">Original Weight-Tracking App</a></li>
+            <li><a href="link-to-your-enhanced-weight-tracker-repo">Enhanced Weight-Tracking App</a></li>
+        </ul>
+        <p><strong>Technologies used:</strong> Java, Firebase Firestore, SQLite, Android SDK</p>
+
+        <!-- OpenGL 3D Graphics Project -->
+        <h3>OpenGL 3D Graphics Application</h3>
+        <p>
+            Designed and developed a 3D scene using OpenGL, focusing on advanced rendering techniques like shadow mapping, shaders, and texture application. Optimized performance through memory management and rendering pipeline improvements. Worked on integrating lighting techniques to create realistic scenes.
+        </p>
+        <ul>
+            <li><a href="link-to-your-original-opengl-repo">Original OpenGL Project</a></li>
+            <li><a href="link-to-your-enhanced-opengl-repo">Enhanced OpenGL Project</a></li>
+        </ul>
+        <p><strong>Technologies used:</strong> OpenGL, C++, FreeType, GLEW, GLFW</p>
     </section>
 
     <!-- Code Review Section -->
@@ -86,33 +173,6 @@
             <source src="path-to-your-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    </section>
-
-    <!-- Artifacts Section -->
-    <section id="artifacts">
-        <h2>Artifacts</h2>
-
-        <!-- Weight-Tracking App -->
-        <h3>Weight-Tracking App</h3>
-        <p>
-            This project is an Android application designed to help users track their daily weight and set goal weights. The app features real-time data storage using Firebase Firestore, as well as local storage using SQLite. The enhancements I made include adding goal-tracking features and improving data visualization with charts.
-        </p>
-        <ul>
-            <li><a href="link-to-your-original-weight-tracker-repo">Original Weight-Tracking App</a></li>
-            <li><a href="link-to-your-enhanced-weight-tracker-repo">Enhanced Weight-Tracking App</a></li>
-        </ul>
-        <p><strong>Technologies used:</strong> Java, Firebase Firestore, SQLite, Android SDK</p>
-
-        <!-- OpenGL 3D Graphics Project -->
-        <h3>OpenGL 3D Graphics Project</h3>
-        <p>
-            This project is a 3D graphics application developed using OpenGL. The application demonstrates advanced rendering techniques, including the use of shaders for text overlays and video embedding. The enhancements made to this project include optimizing the rendering pipeline and incorporating more complex textures and lighting.
-        </p>
-        <ul>
-            <li><a href="link-to-your-original-opengl-repo">Original OpenGL Project</a></li>
-            <li><a href="link-to-your-enhanced-opengl-repo">Enhanced OpenGL Project</a></li>
-        </ul>
-        <p><strong>Technologies used:</strong> OpenGL, C++, FreeType, GLEW, GLFW</p>
     </section>
 
     <!-- Contact Information Section -->
