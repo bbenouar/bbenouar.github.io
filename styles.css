@@ -5,9 +5,9 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
+    line-height: 1.8; /* Slightly increased for better readability */
 }
 
-/* Sidebar Styling */
 /* Sidebar Styling */
 .sidebar {
     width: 250px;
@@ -80,56 +80,70 @@ body {
 /* Main content styling */
 .main-content {
     flex: 1;
-    margin-left: 250px; /* Leaves space for the sidebar */
+    margin-left: 250px;
     padding: 40px;
-    padding-bottom: 80px; /* Increased padding to avoid overlap with the footer */
-    box-sizing: border-box;
+    font-size: 18px; /* Adjusted the main text size for better readability */
 }
 
-.content-header {
-    font-size: 2.5em;
+/* Profile Header Styling */
+.profile-header {
+    font-size: 3em; /* Larger name font */
     color: #4b2c75;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Sub Header Styling */
+.sub-header {
+    font-size: 1.5em;
+    color: gray;
     margin-bottom: 20px;
 }
 
-.content-body {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: gray;
+.sub-header a {
+    color: #4b2c75;
+    text-decoration: none;
 }
 
-/* Contact Section */
+/* Icons Section Styling */
+.icons {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.icons a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.5em;
+    color: #4b2c75;
+}
+
+/* Content Section Styling */
+.content-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    font-size: 1.2em; /* Increased font size */
+    text-align: left; /* Aligning text to the left for a more standard layout */
+}
+
+/* Contact Section Styling */
 .contact-section {
-    text-align: center;
     padding: 20px;
     margin-top: 20px;
     background-color: #f0f0f0;
     border-top: 1px solid #ccc;
+    text-align: left; /* Left-aligned contact section */
+    font-size: 1.1em;
 }
 
 .contact-section a {
     text-decoration: none;
     color: #4b2c75;
 }
-
-/* Footer styling (global) */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-/* Ensuring the footer doesn't overlap the content */
-.main-content {
-    padding-bottom: 100px; /* Added padding to prevent overlap */
-}
-
 iframe {
     max-width: 100%; /* Ensure video scales to full width */
     height: auto;
