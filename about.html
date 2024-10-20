@@ -31,12 +31,28 @@
 
         /* Profile Picture Styling */
         .sidebar img {
-            border-radius: 50%;
+            border-radius: 50%; /* Makes the image circular */
+            width: 100px; /* Base size for smaller screens */
+            height: 100px;
+            margin-bottom: 30px;
+            margin-top: 10px;
+            object-fit: cover; /* Ensures the image fits inside the circular frame */
+}
+
+        /* Adjust size for larger screens */
+        @media (min-width: 768px) {
+        .sidebar img {
             width: 120px;
             height: 120px;
-            margin-bottom: 30px;
-            margin-top: 10px; /* Buffer between image and top */
-        }
+    }
+}
+
+        @media (min-width: 1024px) {
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+    }
+}
 
         .sidebar ul {
             list-style-type: none;
