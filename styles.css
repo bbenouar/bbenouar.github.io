@@ -5,7 +5,32 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
-    line-height: 1.8; /* Slightly increased for better readability */
+    line-height: 1.8;
+}
+
+/* Styling for all pages except the projects page */
+#about-page, #experience-page, #education-page, #skills-page, #contact-page {
+    font-size: 40px; /* Increase text size for better readability */
+    line-height: 1.8; /* Keep line spacing consistent */
+    color: #843a29; /* Set a dark text color */
+}
+
+#about-page .content-section, #experience-page .content-section, 
+#education-page .content-section, #skills-page .content-section, 
+#contact-page .content-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+/* Adjusting header size on pages other than the projects page */
+#about-page h1, #experience-page h1, #education-page h1, #skills-page h1 {
+    font-size: 2.5em; /* Make headers larger */
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 /* Sidebar Styling */
@@ -29,37 +54,6 @@ body {
     width: 100%;
 }
 
-/* Footer text styling inside sidebar */
-.footer-text {
-    text-align: center;
-    padding: 10px 0;
-    font-size: 14px;
-    color: #ffffff;
-    margin-top: auto; /* Ensure it's always pushed to the bottom */
-}
-/* Optional: Add more spacing to push the items above away from the footer */
-.footer-text p {
-    margin-bottom: 10px;
-}
-
-/* Profile Picture Styling */
-.sidebar img {
-    border-radius: 50%; /* Makes the image circular */
-    width: 150px; 
-    height: 150px;
-    margin-bottom: 30px;
-    object-fit: cover; /* Ensures the image fits inside the circular frame */
-    background-color: #ffffff; /* Add background color to make the image more visible */
-}
-
-/* Sidebar list and hover effects */
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-    margin-top: 10px; /* Ensure items are closer to the top under the image */
-}
-
 .sidebar ul li {
     padding: 15px 20px;
     text-align: left;
@@ -76,18 +70,40 @@ body {
     cursor: pointer;
 }
 
+/* Profile Picture Styling */
+.sidebar img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    background-color: #ffffff;
+}
 
 /* Main content styling */
 .main-content {
     flex: 1;
     margin-left: 250px;
     padding: 40px;
-    font-size: 18px; /* Adjusted the main text size for better readability */
+}
+
+/* Specific styling for the projects page */
+#projects-page {
+    font-size: 16px; /* Keep text size smaller on the projects page */
+    line-height: 1.5;
+}
+
+#projects-page .content-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 /* Profile Header Styling */
 .profile-header {
-    font-size: 3em; /* Larger name font */
+    font-size: 3em;
     color: #4b2c75;
     margin-bottom: 10px;
     text-align: left;
@@ -119,24 +135,13 @@ body {
     color: #4b2c75;
 }
 
-/* Content Section Styling */
-.content-section {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-    font-size: 1.2em; /* Increased font size */
-    text-align: left; /* Aligning text to the left for a more standard layout */
-}
-
 /* Contact Section Styling */
 .contact-section {
     padding: 20px;
     margin-top: 20px;
     background-color: #f0f0f0;
     border-top: 1px solid #ccc;
-    text-align: left; /* Left-aligned contact section */
+    text-align: left;
     font-size: 1.1em;
 }
 
@@ -144,6 +149,16 @@ body {
     text-decoration: none;
     color: #4b2c75;
 }
+
+/* Footer text styling inside sidebar */
+.footer-text {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: auto;
+}
+
 iframe {
     max-width: 100%; /* Ensure video scales to full width */
     height: auto;
