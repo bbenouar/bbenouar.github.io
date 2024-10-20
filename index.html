@@ -3,94 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Brahim's Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS -->
-    <style>
-        /* General layout similar to the main page */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            height: 100vh;
-        }
-
-        /* Sidebar will remain the same */
-        .sidebar {
-            width: 250px;
-            background-color: #4b2c75;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 40px;
-            position: fixed;
-            height: 100%;
-            justify-content: space-between; /* Ensures the footer stays at the bottom */
-        }
-
-        .sidebar img {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            margin-bottom: 20px;
-        }
-
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-            width: 100%;
-        }
-
-        .sidebar ul li {
-            padding: 15px 20px;
-            text-align: left;
-            font-size: 18px;
-        }
-
-        .sidebar ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .sidebar ul li:hover {
-            background-color: #6a46b5;
-            cursor: pointer;
-        }
-
-        /* Main content styling */
-        .main-content {
-            flex: 1;
-            margin-left: 250px; /* Leaves space for the sidebar */
-            padding: 40px;
-        }
-
-        .content-header {
-            font-size: 2.5em;
-            color: #4b2c75;
-            margin-bottom: 20px;
-        }
-
-        .content-body {
-            font-size: 1.2em;
-            line-height: 1.6;
-            color: gray;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            width: 100%; /* Full width of the sidebar */
-            position: absolute;
-            bottom: 0;
-}
-    </style>
+    <title>Brahim's Portfolio - Home</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
 <body>
     <!-- Sidebar -->
     <div class="sidebar">
-        <img src="profile-picture.jpg" alt="Profile Picture"> <!-- Placeholder -->
+        <img src="profile-picture.jpg" alt="Profile Picture">
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="experience.html">Experience</a></li>
@@ -98,21 +17,18 @@
             <li><a href="projects.html">Projects</a></li>
             <li><a href="skills.html">Skills</a></li>
         </ul>
+        <!-- Footer inside the sidebar -->
+        <footer>
+            <p>&copy; 2024 Brahim Benouari's Portfolio</p>
+        </footer>
     </div>
 
     <!-- Main Content -->
     <div class="main-content">
-        <div class="content-header">About Me</div>
+        <div class="content-header">Welcome to My Portfolio</div>
         <div class="content-body">
-            <p>
-                I am a Computer Science student with a passion for developing secure, efficient, and scalable software solutions. Over the course of my academic journey, I have gained expertise in various areas such as software design, database management, and algorithms. I constantly seek to learn new technologies and implement them in my projects to deliver innovative solutions.
-            </p>
+            <p>Hello! I'm Brahim Benouari, a Computer Science student passionate about developing secure, efficient, and scalable software solutions. Explore my projects, experience, and more through the links in the sidebar.</p>
         </div>
     </div>
-     <!-- Footer Section -->
-     <footer>
-        <p>&copy; 2024 Brahim Benouari's Portfolio</p>
-    </footer>
-
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* General styling for all pages */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,11 +15,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 40px;
+    padding: 20px 0;
+    justify-content: space-between;
     position: fixed;
     height: 100%;
 }
 
+/* Profile Picture Styling */
 .sidebar img {
     border-radius: 50%;
     width: 120px;
@@ -26,6 +29,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* Sidebar list and hover effects */
 .sidebar ul {
     list-style-type: none;
     padding: 0;
@@ -48,31 +52,58 @@ body {
     cursor: pointer;
 }
 
+/* Footer inside the sidebar */
+.sidebar footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #333;
+    color: #ffffff;
+}
+
 /* Main content styling */
 .main-content {
     flex: 1;
-    margin-left: 250px;
+    margin-left: 250px; /* Leaves space for the sidebar */
     padding: 40px;
 }
 
-.profile-header {
-    font-size: 3em;
+.content-header {
+    font-size: 2.5em;
     color: #4b2c75;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
-.about-me {
+.content-body {
     font-size: 1.2em;
+    line-height: 1.6;
     color: gray;
 }
 
-.icons a {
-    margin-right: 20px;
-    color: #4b2c75;
-    font-size: 30px;
-    text-decoration: none;
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
 }
 
-.icons a:hover {
-    color: #6a46b5;
+.contact-section a {
+    text-decoration: none;
+    color: #4b2c75;
+}
+
+/* Footer styling (global) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
