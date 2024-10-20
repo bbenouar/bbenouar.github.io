@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brahim's Portfolio</title>
+    <title>About Me - Brahim's Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS -->
     <style>
-        /* General Body and Layout */
+        /* General layout similar to the main page */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -15,7 +15,7 @@
             height: 100vh;
         }
 
-        /* Sidebar Styling */
+        /* Sidebar will remain the same */
         .sidebar {
             width: 250px;
             background-color: #4b2c75;
@@ -61,47 +61,26 @@
         .main-content {
             flex: 1;
             margin-left: 250px; /* Leaves space for the sidebar */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
             padding: 40px;
-            text-align: center;
         }
 
-        .profile-header {
-            font-size: 3em;
+        .content-header {
+            font-size: 2.5em;
             color: #4b2c75;
-            margin-bottom: 5px;
-        }
-
-        .about-me {
-            font-size: 1.2em;
-            color: gray;
             margin-bottom: 20px;
         }
 
-        /* Social Media Icons */
-        .icons {
-            margin: 20px 0;
-        }
-
-        .icons a {
-            margin-right: 20px;
-            color: #4b2c75;
-            font-size: 30px;
-            text-decoration: none;
-        }
-
-        .icons a:hover {
-            color: #6a46b5;
+        .content-body {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: gray;
         }
     </style>
 </head>
 <body>
     <!-- Sidebar -->
     <div class="sidebar">
-        <img src="profile-picture.jpg" alt="Profile Picture"> <!-- Profile Image Placeholder -->
+        <img src="profile-picture.jpg" alt="Profile Picture"> <!-- Placeholder -->
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="experience.html">Experience</a></li>
@@ -114,15 +93,12 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <div class="profile-header">BRAHIM BENOUARI</div>
-        <div class="about-me">"Innovative software developer specializing in security solutions."</div>
-
-        <!-- Social Icons -->
-        <div class="icons">
-            <a href="https://linkedin.com/in/brahim-b-9927a935" target="_blank">🔗 LinkedIn</a>
-            <a href="https://github.com/bbenouar" target="_blank">💻 GitHub</a>
+        <div class="content-header">About Me</div>
+        <div class="content-body">
+            <p>
+                I am a Computer Science student with a passion for developing secure, efficient, and scalable software solutions. Over the course of my academic journey, I have gained expertise in various areas such as software design, database management, and algorithms. I constantly seek to learn new technologies and implement them in my projects to deliver innovative solutions.
+            </p>
         </div>
     </div>
 </body>
 </html>
-
