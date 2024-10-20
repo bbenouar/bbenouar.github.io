@@ -8,33 +8,41 @@
     <!-- Add the CSS styling for project galleries here -->
     <style>
     .project-gallery {
-    display: flex;
-    flex-direction: row; /* Aligns image and text side by side */
-    align-items: flex-start; /* Aligns items at the top */
-    justify-content: space-between; /* Ensures proper spacing between image and text */
-    gap: 5px; /* Adds space between image and text */
-    width: 100%; /* Make sure the entire container takes full width */
+        display: flex;
+        flex-direction: row; /* Aligns image and text side by side */
+        align-items: flex-start; /* Aligns items at the top */
+        justify-content: space-between; /* Ensures proper spacing between image and text */
+        gap: 5px; /* Adds space between image and text */
+        width: 100%; /* Make sure the entire container takes full width */
 }
 
     .project-gallery img {
-    max-width: 40%; /* Adjust the width of the image */
-    height: auto; /* Maintain the aspect ratio */
+        max-width: 40%; /* Adjust the width of the image */
+        height: auto; /* Maintain the aspect ratio */
+}
+    .code-review-container {
+        display: flex;              /* Use flexbox to align items side by side */
+        align-items: flex-start;     /* Align the text and video at the top */
+        gap: 5px;                  /* Add space between the text and the video */
 }
 
     .description-box {
-    border: 2px solid #070606; /* Add a border around the text */
-    padding: 10px; /* Add space inside the box */
-    border-radius: 5px; /* Round the corners of the box */
-    background-color: #caf0e1; /* Light gray background */
-    width: 50%; /* Limit the width of the text box */
-    max-width: 600px; /* Limit the maximum width of the text box */
-    text-align: left; /* Left-align the text */
-    margin-left: auto; /* Push the text box to the right margin */
+        border: 2px solid #070606; /* Add a border around the text */
+        padding: 10px; /* Add space inside the box */
+        border-radius: 5px; /* Round the corners of the box */
+        background-color: #caf0e1; /* Light gray background */
+        width: 50%; /* Limit the width of the text box */
+        max-width: 600px; /* Limit the maximum width of the text box */
+        text-align: left; /* Left-align the text */
+        margin-left: auto; /* Push the text box to the right margin */
+}
+    iframe {
+        flex-grow: 1;               /* Allow the video to take up remaining space */
 }
 
     .description-box p {
-    font-weight: bold; /* Make the text bold */
-    font-size: 18px; /* Make the text a little bigger */
+        font-weight: bold; /* Make the text bold */
+        font-size: 18px; /* Make the text a little bigger */
 }
     </style>
 
@@ -101,7 +109,7 @@
         }
         
         table {
-            background-color: #215ac4; /* Light gray background for the whole table */
+            background-color: #c2d2f0; /* Light gray background for the whole table */
             border-collapse: collapse; /* Ensures no gaps between borders */
             width: 100%; /* Ensures the table takes up full width */
         }
@@ -276,12 +284,19 @@
 </section>
 
     <!-- Code Review Section -->
-    <section id="code-review">
-        <h2>Code Review Video</h2>
-        <p>Below is my code review video where I walk through the original functionality of my Weight Tracking App and discuss the planned enhancements:</p>
-        <iframe width="600" height="400" src="https://www.youtube.com/embed/fGhihb5y3E8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+<section id="code-review">
+    <h2>Code Review Video</h2>
     
+    <div class="code-review-container">
+        <!-- Text box next to the video -->
+        <div class="description-box">
+            <p>Below is my code review video where I walk through the original functionality of my Weight Tracking App and discuss the planned enhancements:</p>
+        </div>
+        
+        <!-- Video iframe -->
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/fGhihb5y3E8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
     <!-- Contact Information Section -->
 <section id="contact">
     <h2>Contact Information</h2>
