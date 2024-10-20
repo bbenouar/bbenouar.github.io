@@ -164,6 +164,8 @@
         <p class="large-paragraph">
             I am a Computer Science student specializing in software development and cybersecurity. Over the course of my studies, I have developed a deep understanding of how modern technology solutions can improve efficiency and security. This ePortfolio showcases my skills in areas such as database management, software design, and algorithms. My goal is to continue growing as a software developer and cybersecurity analyst, and the projects in this portfolio demonstrate my capabilities in these areas.
         </p>
+        <p>Current Date and Time: <span id="dateTime"></span></p> <!-- Add date and time here -->
+
     </section>
 
     <!-- Education Section -->
@@ -313,7 +315,25 @@
     <p>Email: <a href="mailto:bbenouari@gmail.com">My Email</a></p> <!-- Add "mailto:" for email links -->
     <p>LinkedIn: <a href="https://www.linkedin.com/in/brahim-b-9927a935/" target="_blank">My LinkedIn Profile</a></p>
     <p>GitHub: <a href="https://github.com/bbenouar" target="_blank">My GitHub Profile</a></p>
+</section>
 
+
+<!-- Add your JavaScript before the closing body tag -->
+<script>
+    function updateDateTime() {
+        var now = new Date();
+        var dateTime = now.toLocaleString(); // Format the date and time
+        document.getElementById('dateTime').textContent = dateTime;
+    }
+
+    // Update the date and time on page load
+    updateDateTime();
+
+    // Update every second (optional)
+    setInterval(updateDateTime, 1000);
+</script>
+
+</body>
 
 
     <!-- Footer Section -->
