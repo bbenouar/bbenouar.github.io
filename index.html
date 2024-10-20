@@ -9,24 +9,27 @@
     <style>
     .project-gallery {
     display: flex;
-    flex-direction: row; /* Stack image and text side by side (horizontally) */
-    align-items: flex-start; /* Align items at the top */
+    flex-direction: row; /* Aligns image and text side by side */
+    align-items: flex-start; /* Aligns items at the top */
+    justify-content: space-between; /* Ensures proper spacing between image and text */
     gap: 20px; /* Adds space between image and text */
+    width: 100%; /* Make sure the entire container takes full width */
 }
 
     .project-gallery img {
-    max-width: 50%; /* Adjust the image width dynamically */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 40%; /* Adjust the width of the image */
+    height: auto; /* Maintain the aspect ratio */
 }
 
-.description-box {
+    .description-box {
     border: 2px solid #070606; /* Add a border around the text */
     padding: 10px; /* Add space inside the box */
     border-radius: 5px; /* Round the corners of the box */
     background-color: #caf0e1; /* Light gray background */
-    width: 50%; /* Make the text box take up 50% of the container */
+    width: 50%; /* Limit the width of the text box */
     max-width: 600px; /* Limit the maximum width of the text box */
     text-align: left; /* Left-align the text */
+    margin-left: auto; /* Push the text box to the right margin */
 }
 
     .description-box p {
