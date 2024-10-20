@@ -146,17 +146,60 @@
     </header>
 
     <!-- Navigation Section -->
-    <nav>
-        <ul>
-            <li><a href="#self-assessment">Professional Self-Assessment</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Work Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#code-review">Code Review Video</a></li>
-            <li><a href="#contact">Contact Information</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="#self-assessment">Professional Self-Assessment</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Work Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#code-review">Code Review Video</a></li>
+        <li><a href="#contact">Contact Information</a></li>
+    </ul>
+    <!-- Add a span for the date and time -->
+    <span id="dateTime"></span>
+</nav>
+
+<!-- Added JavaScript for updating the date/time -->
+<script>
+    function updateDateTime() {
+        var now = new Date();
+        var dateTime = now.toLocaleString(); // Format the date and time
+        document.getElementById('dateTime').textContent = dateTime;
+    }
+
+    // Update the date and time on page load
+    updateDateTime();
+
+    // Update every second
+    setInterval(updateDateTime, 1000);
+</script>
+
+<!-- CSS to align the date and time with the navigation links -->
+<style>
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    #dateTime {
+        font-weight: bold;
+        margin-left: 20px; /* Space between links and date/time */
+    }
+</style>
+
 
     <!-- Professional Self-Assessment Section -->
     <section id="self-assessment">
@@ -316,23 +359,6 @@
     <p>LinkedIn: <a href="https://www.linkedin.com/in/brahim-b-9927a935/" target="_blank">My LinkedIn Profile</a></p>
     <p>GitHub: <a href="https://github.com/bbenouar" target="_blank">My GitHub Profile</a></p>
 </section>
-
-
-<!-- Add your JavaScript before the closing body tag -->
-<script>
-    function updateDateTime() {
-        var now = new Date();
-        var dateTime = now.toLocaleString(); // Format the date and time
-        document.getElementById('dateTime').textContent = dateTime;
-    }
-
-    // Update the date and time on page load
-    updateDateTime();
-
-    // Update every second (optional)
-    setInterval(updateDateTime, 1000);
-</script>
-
 </body>
 
 
