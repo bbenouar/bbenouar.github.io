@@ -5,11 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience - Brahim's ePortfolio</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS -->
+    <style>
+        /* Add your specific styles for experience */
+        .content-section {
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .content-section h2 {
+            font-size: 2em;
+            color: #4b2c75;
+            margin-bottom: 10px;
+        }
+
+        .content-section p {
+            font-size: 1.2em;
+            color: gray;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
     <!-- Sidebar -->
     <div class="sidebar">
-        <img src="profile-picture.jpg" alt="Profile Picture">
+        <img src="Images/profile-picture.jpg" alt="Profile Picture"> <!-- Add your profile picture -->
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="experience.html">Experience</a></li>
@@ -22,13 +45,14 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <h1>Work Experience</h1>
-        <h2>Software Quality Assurance (SQA) Engineer</h2>
-        <ul>
-            <li>Automated and manual testing of software applications to ensure quality and performance.</li>
-            <li>Developed and executed test scripts for identifying and resolving defects in software products.</li>
-            <li>Conducted performance testing to enhance system efficiency and scalability.</li>
-        </ul>
+        <!-- Experience Section -->
+        <div class="content-section" id="experience">
+            <h2>Work Experience</h2>
+            <p><strong>Software Quality Assurance (SQA) Engineer</strong></p>
+            <p>Automated and manual testing of software applications to ensure quality and performance.</p>
+            <p>Developed and executed test scripts for identifying and resolving defects in software products.</p>
+            <p>Conducted performance testing to enhance system efficiency and scalability.</p>
+        </div>
     </div>
 </body>
 </html>
