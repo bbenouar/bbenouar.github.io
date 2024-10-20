@@ -3,166 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brahim's ePortfolio</title>
-
-    <!-- Add CSS styling for sidebar and main content -->
+    <title>Brahim's Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
     <style>
+        /* Body Styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            display: flex; /* Use flexbox for layout */
+            padding: 0;
+            display: flex;
+            background-color: #f0f0f0;
         }
 
-        /* Sidebar styling */
+        /* Sidebar Styling */
         .sidebar {
             width: 250px;
-            background-color: #4A306D;
+            background-color: #4b2c75;
             color: white;
-            height: 100vh;
-            padding-top: 30px;
-            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
         }
 
-        .sidebar a {
-            padding: 15px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-            display: block;
-        }
-
-        .sidebar a:hover {
-            background-color: #6B488D;
-        }
-
-        .main-content {
-            margin-left: 260px; /* Leave space for the sidebar */
-            padding: 20px;
-            width: 100%;
-        }
-
-        header {
-            color: #4A306D;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-
-        h2 {
-            font-size: 24px;
-            color: #4CAF50;
-            text-decoration: underline;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        /* Profile picture */
-        .profile-pic {
+        .sidebar img {
             border-radius: 50%;
             width: 120px;
             height: 120px;
-            margin: 20px auto;
-            display: block;
+            margin-bottom: 20px;
         }
 
-        .contact-info {
-            margin-top: 20px;
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
         }
 
-        .contact-info a {
-            color: #4A306D;
-            font-weight: bold;
+        .sidebar ul li {
+            padding: 15px 20px;
+            text-align: left;
             font-size: 18px;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #6a46b5;
+            cursor: pointer;
+        }
+
+        /* Main content styling */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            background-color: white;
+        }
+
+        .profile-header {
+            font-size: 2.5em;
+            color: #4b2c75;
+            margin-bottom: 5px;
+        }
+
+        .sub-header {
+            color: gray;
+            font-size: 1.2em;
+        }
+
+        .icons {
+            margin: 20px 0;
+        }
+
+        .icons a {
+            margin-right: 20px;
+            color: #4b2c75;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .content-section {
+            margin-top: 40px;
+        }
+
+        .content-section h2 {
+            font-size: 1.5em;
+            color: #4CAF50;
         }
     </style>
 </head>
 <body>
-
-    <!-- Sidebar Section -->
+    <!-- Sidebar -->
     <div class="sidebar">
-        <img src="path_to_your_profile_image.jpg" alt="Profile Picture" class="profile-pic">
-        <a href="#self-assessment">Professional Self-Assessment</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Work Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#code-review">Code Review Video</a>
-        <a href="#contact">Contact Information</a>
+        <img src="profile-picture.jpg" alt="Profile Picture"> <!-- Placeholder -->
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
 
-    <!-- Main Content Section -->
+    <!-- Main Content -->
     <div class="main-content">
-        <!-- Header Section -->
-        <header>
-            <h1>Welcome to Brahim's ePortfolio</h1>
-            <p>Showcasing My Professional Growth in Computer Science</p>
-        </header>
+        <div class="profile-header">BRAHIM BENOUARI</div>
+        <div class="sub-header">Boston, MA | bbenouari@gmail.com</div>
 
-        <!-- Professional Self-Assessment Section -->
-        <section id="self-assessment">
-            <h2>Professional Self-Assessment</h2>
-            <p>
-                I am a Computer Science student specializing in software development and cybersecurity. Over the course of my studies, I have developed a deep understanding of how modern technology solutions can improve efficiency and security. This ePortfolio showcases my skills in areas such as database management, software design, and algorithms. My goal is to continue growing as a software developer and cybersecurity analyst, and the projects in this portfolio demonstrate my capabilities in these areas.
-            </p>
-        </section>
+        <!-- Social Icons (Optional) -->
+        <div class="icons">
+            <a href="https://linkedin.com/in/brahim-b-9927a935" target="_blank">🔗 LinkedIn</a>
+            <a href="https://github.com/bbenouar" target="_blank">💻 GitHub</a>
+        </div>
 
-        <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <table>
-                <tr>
-                    <th>Degree</th>
-                    <th>Institution</th>
-                    <th>Focus</th>
-                </tr>
-                <tr>
-                    <td>Bachelor’s Degree in Computer Science (In Progress)</td>
-                    <td>Southern New Hampshire University</td>
-                    <td>Software Engineering, Cybersecurity, Data Structures, and Algorithms</td>
-                </tr>
-                <tr>
-                    <td>Electrical Engineering</td>
-                    <td>Northeastern University</td>
-                    <td>Hardware Systems, Circuit Design, and Embedded Systems</td>
-                </tr>
-            </table>
-        </section>
+        <!-- About Section -->
+        <div class="content-section" id="about">
+            <h2>About Me</h2>
+            <p>I am a Computer Science student specializing in software development and cybersecurity. Over the course of my studies, I have developed a deep understanding of how modern technology solutions can improve efficiency and security.</p>
+        </div>
 
-        <!-- Work Experience Section -->
-        <section id="experience">
-            <h2>Work Experience</h2>
-            <h3>Software Quality Assurance (SQA) Engineer</h3>
+        <!-- Experience Section -->
+        <div class="content-section" id="experience">
+            <h2>Experience</h2>
+            <p>Software Quality Assurance (SQA) Engineer</p>
             <ul>
                 <li>Automated and manual testing of software applications to ensure quality and performance.</li>
-                <li>Developed and executed test scripts for identifying and resolving defects in software products.</li>
-                <li>Conducted performance testing to enhance system efficiency and scalability.</li>
+                <li>Developed test scripts for identifying and resolving software defects.</li>
             </ul>
-        </section>
+        </div>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <h3>Software Development</h3>
-            <p>Proficient in programming languages such as Java, Python, and C++. Moderate in mobile app development and web technologies.</p>
-            <h3>Database Management</h3>
-            <p>Proficient in scalable database design using SQL, MySQL, and SQLite, with experience in cloud-based databases like Firebase.</p>
-        </section>
+        <!-- Education Section -->
+        <div class="content-section" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor’s Degree in Computer Science - Southern New Hampshire University</li>
+                <li>Electrical Engineering - Northeastern University</li>
+            </ul>
+        </div>
 
-        <!-- Contact Information Section -->
-        <section id="contact" class="contact-info">
+        <!-- Projects Section -->
+        <div class="content-section" id="projects">
+            <h2>Projects</h2>
+            <p>OpenGL Graphics Project</p>
+            <a href="https://github.com/bbenouar/Comp-Graphic-and-Visualization-.git" target="_blank">View Project</a>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="content-section" id="contact">
             <h2>Contact Information</h2>
-            <p>If you'd like to connect or learn more about my work, feel free to reach out:</p>
-            <p>Email: <a href="mailto:bbenouari@gmail.com">My Email</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/brahim-b-9927a935/" target="_blank">My LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/bbenouar" target="_blank">My GitHub Profile</a></p>
-        </section>
+            <p>Email: <a href="mailto:bbenouari@gmail.com">bbenouari@gmail.com</a></p>
+        </div>
     </div>
-
 </body>
 </html>
