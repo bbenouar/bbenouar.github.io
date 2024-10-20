@@ -25,9 +25,9 @@ body {
 /* Profile Picture Styling */
 .sidebar img {
     border-radius: 50%; /* Makes the image circular */
-    width: 120px; 
-    height: 120px;
-    margin-bottom: 20px;
+    width: 150px; 
+    height: 150px;
+    margin-bottom: 30px;
     object-fit: cover; /* Ensures the image fits inside the circular frame */
     background-color: #ffffff; /* Add background color to make the image more visible */
 }
@@ -43,7 +43,7 @@ body {
 .sidebar ul li {
     padding: 15px 20px;
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .sidebar ul li a {
@@ -57,17 +57,17 @@ body {
 }
 
 /* Footer inside the sidebar */
-.sidebar footer {
-    margin-top: 20px; /* Small margin to separate it from the sidebar items */
-    padding: 10px;
+/* Footer text styling */
+.footer-text {
     text-align: center;
-    width: 100%;
-    background-color: #333;
+    padding: 10px 0;
+    font-size: 14px;
     color: #ffffff;
-    position: absolute;
-    bottom: 0;
 }
-
+/* Optional: Add more spacing to push the items above away from the footer */
+.footer-text p {
+    margin-bottom: 10px;
+}
 /* Main content styling */
 .main-content {
     flex: 1;
