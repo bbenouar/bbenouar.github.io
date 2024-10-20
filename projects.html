@@ -11,8 +11,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
             min-height: 100vh;
+            display: flex;
             flex-direction: column;
         }
 
@@ -59,12 +59,13 @@
             cursor: pointer;
         }
 
+        /* Main content styling */
         .main-content {
             flex: 1;
             margin-left: 250px;
             padding: 40px;
-            min-height: calc(100vh - 100px); /* Ensure the content doesn't get covered by the footer */
             box-sizing: border-box;
+            overflow-y: auto; /* Scrollable content */
         }
 
         .content-header {
@@ -79,12 +80,13 @@
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
-            gap: 10px;
+            gap: 5px;
             width: 100%;
+            margin-bottom: 30px; /* Add space between projects */
         }
 
         .project-gallery img, .project-gallery iframe {
-            max-width: 45%;
+            max-width: 40%;
             height: auto;
         }
 
@@ -96,6 +98,7 @@
             width: 50%;
             max-width: 600px;
             text-align: left;
+            margin-left: auto;
         }
 
         .description-box p {
@@ -103,16 +106,22 @@
             font-size: 18px;
         }
 
+        /* Footer Styling */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
+            position: relative;
             width: 100%;
+            margin-top: auto; /* Ensures footer stays at the bottom after content */
             box-sizing: border-box;
-            position: relative; /* Change this to relative so it doesn’t overlap content */
         }
 
+        /* Ensuring buffer between content and footer */
+        .footer-buffer {
+            height: 50px; /* Adjust the buffer height */
+        }
     </style>
 </head>
 <body>
@@ -193,6 +202,9 @@
                 <p>This is the code review video where I walk through the original functionality of my Weight Tracking App and discuss the planned enhancements.</p>
             </div>
         </div>
+
+        <!-- Buffer to ensure content doesn't overlap the footer -->
+        <div class="footer-buffer"></div>
     </div>
 
     <!-- Footer Section -->
@@ -202,4 +214,3 @@
 
 </body>
 </html>
-
