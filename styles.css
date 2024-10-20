@@ -10,9 +10,9 @@ body {
 
 /* Styling for all pages except the projects page */
 #about-page, #experience-page, #education-page, #skills-page, #contact-page {
-    font-size: 40px; /* Increase text size for better readability */
+    font-size: 35px; /* Increase text size for better readability */
     line-height: 1.8; /* Keep line spacing consistent */
-    color: #843a29; /* Set a dark text color */
+    color: #2f19b8; /* Set a dark text color */
 }
 
 #about-page .content-section, #experience-page .content-section, 
@@ -21,14 +21,14 @@ body {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(209, 46, 46, 0.1);
     margin-bottom: 40px;
     text-align: left;
 }
 
 /* Adjusting header size on pages other than the projects page */
 #about-page h1, #experience-page h1, #education-page h1, #skills-page h1 {
-    font-size: 2.5em; /* Make headers larger */
+    font-size: 2em; /* Make headers larger */
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -89,7 +89,7 @@ body {
 
 /* Specific styling for the projects page */
 #projects-page {
-    font-size: 16px; /* Keep text size smaller on the projects page */
+    font-size: 18px; /* Keep text size smaller on the projects page */
     line-height: 1.5;
 }
 
@@ -104,7 +104,7 @@ body {
 /* Profile Header Styling */
 .profile-header {
     font-size: 3em;
-    color: #4b2c75;
+    color: #f1f7f6;
     margin-bottom: 10px;
     text-align: left;
     font-weight: bold;
@@ -154,8 +154,8 @@ body {
 .footer-text {
     text-align: center;
     padding: 10px 0;
-    font-size: 14px;
-    color: #ffffff;
+    font-size: 16px;
+    color: #f40808f2;
     margin-top: auto;
 }
 
