@@ -15,9 +15,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
     position: fixed;
     height: 100%;
+    top: 0;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
 
 /* Profile Picture Styling */
@@ -35,7 +37,7 @@ body {
     list-style-type: none;
     padding: 0;
     width: 100%;
-    margin-top: 10px; /* Move items closer to the top under the image */
+    margin-top: 10px; /* Ensure items are closer to the top under the image */
 }
 
 .sidebar ul li {
@@ -62,6 +64,8 @@ body {
     width: 100%;
     background-color: #333;
     color: #ffffff;
+    position: absolute;
+    bottom: 0;
 }
 
 /* Main content styling */
@@ -69,7 +73,8 @@ body {
     flex: 1;
     margin-left: 250px; /* Leaves space for the sidebar */
     padding: 40px;
-    padding-bottom: 60px; /* Add extra padding to avoid overlap with the footer */
+    padding-bottom: 80px; /* Increased padding to avoid overlap with the footer */
+    box-sizing: border-box;
 }
 
 .content-header {
@@ -109,4 +114,14 @@ footer {
     left: 0;
     width: 100%;
     z-index: 10;
+}
+
+/* Ensuring the footer doesn't overlap the content */
+.main-content {
+    padding-bottom: 100px; /* Added padding to prevent overlap */
+}
+
+iframe {
+    max-width: 100%; /* Ensure video scales to full width */
+    height: auto;
 }
