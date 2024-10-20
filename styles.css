@@ -8,18 +8,38 @@ body {
 }
 
 /* Sidebar Styling */
+/* Sidebar Styling */
 .sidebar {
     width: 250px;
-    background-color: #4b2c75; /* Purple color */
+    background-color: #4b2c75;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
     position: fixed;
     height: 100%;
-    top: 0;
-    padding-top: 20px;
-    box-sizing: border-box;
+    justify-content: space-between; /* Ensures space between list and footer */
+}
+
+/* Sidebar List styling */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+/* Footer text styling inside sidebar */
+.footer-text {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: auto; /* Ensure it's always pushed to the bottom */
+}
+/* Optional: Add more spacing to push the items above away from the footer */
+.footer-text p {
+    margin-bottom: 10px;
 }
 
 /* Profile Picture Styling */
@@ -56,18 +76,7 @@ body {
     cursor: pointer;
 }
 
-/* Footer inside the sidebar */
-/* Footer text styling */
-.footer-text {
-    text-align: center;
-    padding: 10px 0;
-    font-size: 14px;
-    color: #ffffff;
-}
-/* Optional: Add more spacing to push the items above away from the footer */
-.footer-text p {
-    margin-bottom: 10px;
-}
+
 /* Main content styling */
 .main-content {
     flex: 1;
