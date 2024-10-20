@@ -12,6 +12,8 @@
             margin: 0;
             padding: 0;
             display: flex;
+            min-height: 100vh;
+            flex-direction: column;
         }
 
         .sidebar {
@@ -24,6 +26,8 @@
             padding-top: 40px;
             position: fixed;
             height: 100%;
+            top: 0;
+            left: 0;
         }
 
         .sidebar img {
@@ -59,6 +63,8 @@
             flex: 1;
             margin-left: 250px;
             padding: 40px;
+            min-height: calc(100vh - 100px); /* Ensure the content doesn't get covered by the footer */
+            box-sizing: border-box;
         }
 
         .content-header {
@@ -73,12 +79,12 @@
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
-            gap: 5px;
+            gap: 10px;
             width: 100%;
         }
 
         .project-gallery img, .project-gallery iframe {
-            max-width: 40%;
+            max-width: 45%;
             height: auto;
         }
 
@@ -90,12 +96,21 @@
             width: 50%;
             max-width: 600px;
             text-align: left;
-            margin-left: auto;
         }
 
         .description-box p {
             font-weight: bold;
             font-size: 18px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative; /* Change this to relative so it doesn’t overlap content */
         }
 
     </style>
@@ -167,22 +182,24 @@
             </div>
         </div>
 
+        <!-- Code Review Video -->
         <h4>Code Review Video</h4>
-<div class="project-gallery">
-    <!-- Embed the video with larger dimensions -->
-    <iframe width="600" height="450" src="https://www.youtube.com/embed/fGhihb5y3E8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="project-gallery">
+            <!-- Embed the video with larger dimensions -->
+            <iframe width="600" height="450" src="https://www.youtube.com/embed/fGhihb5y3E8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <!-- Video description on the right -->
-    <div class="description-box">
-        <p>This is the code review video where I walk through the original functionality of my Weight Tracking App and discuss the planned enhancements.</p>
+            <!-- Video description on the right -->
+            <div class="description-box">
+                <p>This is the code review video where I walk through the original functionality of my Weight Tracking App and discuss the planned enhancements.</p>
+            </div>
+        </div>
     </div>
-</div>
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2024 Brahim Benouari's Portfolio</p>
-</footer>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Brahim Benouari's Portfolio</p>
+    </footer>
 
 </body>
 </html>
-
 
