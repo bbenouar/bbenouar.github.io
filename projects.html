@@ -11,9 +11,9 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            min-height: 100vh;
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
         }
 
         .sidebar {
@@ -26,8 +26,6 @@
             padding-top: 40px;
             position: fixed;
             height: 100%;
-            top: 0;
-            left: 0;
         }
 
         .sidebar img {
@@ -59,13 +57,10 @@
             cursor: pointer;
         }
 
-        /* Main content styling */
         .main-content {
             flex: 1;
             margin-left: 250px;
             padding: 40px;
-            box-sizing: border-box;
-            overflow-y: auto; /* Scrollable content */
         }
 
         .content-header {
@@ -82,7 +77,6 @@
             justify-content: space-between;
             gap: 5px;
             width: 100%;
-            margin-bottom: 30px; /* Add space between projects */
         }
 
         .project-gallery img, .project-gallery iframe {
@@ -114,8 +108,6 @@
             padding: 10px;
             position: relative;
             width: 100%;
-            margin-top: auto; /* Ensures footer stays at the bottom after content */
-            box-sizing: border-box;
         }
 
         /* Ensuring buffer between content and footer */
@@ -141,15 +133,15 @@
     <div class="main-content">
         <div class="content-header">Projects</div>
 
-        <!-- Project 1 - OpenGL 3D Graphics Application -->
-        <h3>OpenGL 3D Graphics Application</h3>
+        <!-- Software Design and Engineering -->
+        <h3>Software Design and Engineering</h3>
 
-        <!-- Original Version -->
+        <!-- OpenGL 3D Graphics Application -->
         <h4>Original Version</h4>
         <div class="project-gallery">
             <img src="Images/SoftDesignInitial.png" alt="Original OpenGL Project - Screenshot 1" width="500">
             <div class="description-box">
-                <p>The project was built in two phases. Phase one involved implementing and creating basic 3D shapes such as cubes, cones, cylinders, and spheres, rendering them in OpenGL to form a 3D scene. The focus during this phase was on efficient memory management and optimized rendering performance. Phase two expanded on this foundation by incorporating advanced features such as realistic textures, dynamic lighting, and more complex objects, resulting in a more lifelike and visually engaging experience.</p>
+                <p>The project was built in two phases. Phase one involved implementing and creating basic 3D shapes such as cubes, cones, cylinders, and spheres, rendering them in OpenGL to form a 3D scene. The focus during this phase was on efficient memory management and optimized rendering performance.</p>
                 <!-- Link to the repository -->
                 <p><a href="https://github.com/bbenouar/Comp-Graphic-and-Visualization-.git" target="_blank">View OpenGL Project Repository</a></p>
             </div>
@@ -160,21 +152,21 @@
         <div class="project-gallery">
             <img src="Images/SoftDesignFinal.png" alt="Enhanced OpenGL Project - Screenshot 1" width="500">
             <div class="description-box">
-                <p>This enhanced version includes more realistic objects, textures, and lighting. The progression from basic geometric shapes to lifelike elements demonstrates my growth in working with rendering techniques and shader programming.</p>
+                <p>This enhanced version includes more realistic objects, textures, and lighting, demonstrating growth in rendering techniques and shader programming.</p>
                 <!-- Link to the repository -->
                 <p><a href="https://github.com/bbenouar/Comp-Graphic-and-Visualization-.git" target="_blank">View OpenGL Project Repository</a></p>
             </div>
         </div>
 
-        <!-- Project 2 - Weight Tracking App -->
-        <h3>Weight Tracking App</h3>
+        <!-- Algorithms and Data Structures -->
+        <h3>Algorithms and Data Structures</h3>
 
-        <!-- Original Version -->
+        <!-- Weight Tracking App (Original and Enhanced) -->
         <h4>Original Version</h4>
         <div class="project-gallery">
             <img src="Images/DataStructInit.png" alt="Original Weight Tracking App - Screenshot 1" width="320">
             <div class="description-box">
-                <p>The Weight Tracker System is a mobile app that helps users track their weight, set goals, and view progress. Initially, it provided basic features like weight entry, unit selection, and a local database. It has since been enhanced with goal setting, progress charts, and visual statistics.</p>
+                <p>The Weight Tracker System is a mobile app created to help users track their weight, set goals, and view progress with stats like average weight. Initially, it provided basic features like weight entry, unit selection, local database, and a simple log.</p>
                 <!-- Link to the repository -->
                 <p><a href="https://github.com/bbenouar/CS-360-Mobile-Architecture.git" target="_blank">View Mobile-Architecture Project Repository</a></p>
             </div>
@@ -185,7 +177,32 @@
         <div class="project-gallery">
             <img src="Images/DataStructFinal.png" alt="Enhanced Weight Tracking App - Screenshot 1" width="320">
             <div class="description-box">
-                <p>This enhanced version includes goal-setting functionality, data persistence with Firebase, UI improvements, and a graph feature for visual weight tracking. This demonstrates my key mobile app development skills.</p>
+                <p>This enhanced version includes goal-setting functionality, data persistence with Firebase, UI improvements, and a graph feature for visual weight tracking.</p>
+                <!-- Link to the repository -->
+                <p><a href="https://github.com/bbenouar/CS-360-Mobile-Architecture.git" target="_blank">View Mobile-Architecture Project Repository</a></p>
+            </div>
+        </div>
+
+        <!-- Databases -->
+        <h3>Databases</h3>
+
+        <!-- Weight Tracking App (Database Enhancements) -->
+        <h4>Original Version</h4>
+        <div class="project-gallery">
+            <img src="Images/DataBaseInitial.png" alt="Original Weight Tracking App - Database Screenshot 1" width="320">
+            <div class="description-box">
+                <p>The project initially utilized a local SQLite database, which logged the entered weights. It has since been enhanced for more efficient data handling.</p>
+                <!-- Link to the repository -->
+                <p><a href="https://github.com/bbenouar/CS-360-Mobile-Architecture.git" target="_blank">View Mobile-Architecture Project Repository</a></p>
+            </div>
+        </div>
+
+        <!-- Enhanced Version -->
+        <h4>Enhanced Version</h4>
+        <div class="project-gallery">
+            <img src="Images/DataBaseFinal.png" alt="Enhanced Weight Tracking App - Firebase Integration Screenshot 1" width="700">
+            <div class="description-box">
+                <p>This enhanced version includes Firebase integration for cloud-based storage, user authentication, and real-time chart updates, showcasing cloud technology skills.</p>
                 <!-- Link to the repository -->
                 <p><a href="https://github.com/bbenouar/CS-360-Mobile-Architecture.git" target="_blank">View Mobile-Architecture Project Repository</a></p>
             </div>
@@ -194,16 +211,13 @@
         <!-- Code Review Video -->
         <h4>Code Review Video</h4>
         <div class="project-gallery">
-            <!-- Embed the video with larger dimensions -->
             <iframe width="600" height="450" src="https://www.youtube.com/embed/fGhihb5y3E8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <!-- Video description on the right -->
             <div class="description-box">
-                <p>This is the code review video where I walk through the original functionality of my Weight Tracking App and discuss the planned enhancements.</p>
+                <p>Code review video walkthrough explaining the original functionality of my Weight Tracking App and the planned enhancements.</p>
             </div>
         </div>
 
-        <!-- Buffer to ensure content doesn't overlap the footer -->
+        <!-- Footer buffer -->
         <div class="footer-buffer"></div>
     </div>
 
@@ -211,7 +225,6 @@
     <footer>
         <p>&copy; 2024 Brahim Benouari's Portfolio</p>
     </footer>
-
 </body>
 </html>
 
