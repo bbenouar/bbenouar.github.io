@@ -26,6 +26,7 @@
             padding-top: 40px;
             position: fixed;
             height: 100%;
+            justify-content: space-between; /* Ensures the footer stays at the bottom */
         }
 
         .sidebar img {
@@ -80,12 +81,10 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            left: 0;
+            width: 100%; /* Full width of the sidebar */
+            position: absolute;
             bottom: 0;
-            width: 100%; /* Ensures the footer spans across the page */
-            z-index: 1000; /* Ensures the footer appears on top of other elements */
-        }    
+}
     </style>
 </head>
 <body>
