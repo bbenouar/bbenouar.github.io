@@ -1,6 +1,6 @@
-title: Brahim Benouari
-logo:"Images/logoImage.png"
-# description: Minimal is a theme for GitHub Pages.
+title: "Brahim Benouari"
+logo: "images/logoImage.jpg"
+# description: "Minimal is a theme for GitHub Pages."
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
