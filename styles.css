@@ -160,6 +160,13 @@ body {
 }
 
 iframe {
-    max-width: 100%; /* Ensure video scales to full width */
-    height: auto;
+    max-width: 100%;
+    height: 450px; /* Ensure enough height */
+    border: none; /* Remove borders if any */
+}
+
+/* Ensure video container has enough padding/margin */
+.code-review-container {
+    margin-bottom: 50px; /* Add bottom margin to avoid truncation */
+    padding-bottom: 20px; /* Ensure space below the video */
 }
